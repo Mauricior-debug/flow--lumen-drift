@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Lumen Drift",
+    "slug": "lumen-drift",
+    "owner": "naza123",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "lumendrift",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F5FAFE",
+    "runtimeVersion": "58.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/2394b7a1-cee7-42c0-af9f-8a911cb7cd04"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lumendrift.hydration",
+      "icon": "./assets/icon.png"
+    },
+    "android": {
+      "package": "com.lumendrift.hydration",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#D6EEFB"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "name": "Lumen Drift",
+      "description": "Track daily water intake, log each glass, and keep a hydration goal."
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-video",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#D6EEFB",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 240
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#2563EB"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2394b7a1-cee7-42c0-af9f-8a911cb7cd04"
+      },
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      }
+    }
+  }
+}
